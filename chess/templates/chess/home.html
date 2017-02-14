@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Input Control</title>
+</head>
+<body>
+<form action = "{% url 'info_signup' %}" method = "post" >
+{% csrf_token %} 
+username:  <input type="text" name="username" />
+<br>
+password:  <input type="text" name="password" />
+email:  <input type="text" name="email" />
+<input type="submit",value="go">
+</form>
+</body>
+
+</html>
